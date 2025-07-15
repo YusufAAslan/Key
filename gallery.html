@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Anahtar Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <!-- Logo Symbol -->
+        <g transform="translate(10, 8)">
+          <!-- Maroon/Red parts -->
+          <path d="M0 8 L0 32 L8 32 L8 16 L24 16 L24 8 Z" fill="#8B2635"/>
+          <path d="M32 8 L40 8 L40 16 L32 16 Z" fill="#8B2635"/>
+          <path d="M16 24 L32 24 L32 32 L24 32 L24 40 L16 40 Z" fill="#8B2635"/>
+          
+          <!-- Teal/Blue parts -->
+          <path d="M24 0 L32 0 L32 24 L24 24 Z" fill="#2B8A9C"/>
+          <path d="M16 16 L24 16 L24 44 L16 44 Z" fill="#2B8A9C"/>
+          <path d="M8 32 L16 32 L16 40 L8 40 Z" fill="#2B8A9C"/>
+        </g>
+          
+        <!-- Company Name -->
+        <text x="60" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2B8A9C">Anahtar</text>
+        <text x="60" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2B8A9C">Tourism</text>
+      </svg>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="ar/gallery.html" class="lang-switch">العربية</a>
+        </nav>
+    </header>
+
+    <section class="gallery-hero">
+        <h1>Our Gallery</h1>
+        <p>Discover the moments that define our commitment to exceptional medical tourism and travel experiences</p>
+    </section>
+
+    <section class="section">
+        <div class="gallery-categories">
+            <button class="category-filter active" data-category="all">All</button>
+            <button class="category-filter" data-category="medical">Medical Tourism</button>
+            <button class="category-filter" data-category="therapeutic">Therapeutic Travel</button>
+            <button class="category-filter" data-category="hotels">Hotel Bookings</button>
+            <button class="category-filter" data-category="tickets">Travel Tickets</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="medical">
+              <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Medical Tourism">                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h4>Advanced Medical Care</h4>
+                        <p>State-of-the-art medical facilities with international standards</p>
+                    </div>
+                </div>
+                <div class="gallery-item-content">
+                    <h3>Medical Tourism Excellence</h3>
+                    <p>Our partnerships with leading medical centers ensure world-class healthcare services for our international patients.</p>
+                    <div class="gallery-item-meta">
+                        <span><i class="fas fa-map-marker-alt"></i>Turkey & Syria</span>
+                        <span><i class="fas fa-users"></i>500+ Patients</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="therapeutic">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Therapeutic Travel">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h4>Healing Journeys</h4>
+                        <p>Therapeutic travel experiences for complete wellness</p>
+                    </div>
+                </div>
+                <div class="gallery-item-content">
+                    <h3>Therapeutic Travel Programs</h3>
+                    <p>Specialized therapeutic travel packages combining medical treatment with cultural experiences and relaxation.</p>
+                    <div class="gallery-item-meta">
+                        <span><i class="fas fa-heart"></i>Wellness Focus</span>
+                        <span><i class="fas fa-calendar"></i>Year-round</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hotels">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Luxury Hotels">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h4>Premium Accommodations</h4>
+                        <p>Carefully selected hotels for comfort and convenience</p>
+                    </div>
+                </div>
+                <div class="gallery-item-content">
+                    <h3>Hotel Reservations</h3>
+                    <p>We secure the best accommodations tailored to your medical tourism needs, from luxury hotels to medical-friendly facilities.</p>
+                    <div class="gallery-item-meta">
+                        <span><i class="fas fa-star"></i>5-Star Rated</span>
+                        <span><i class="fas fa-bed"></i>Medical Friendly</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="tickets">
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Flight Tickets">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h4>Seamless Travel</h4>
+                        <p>Convenient flight arrangements and travel coordination</p>
+                    </div>
+                </div>
+                <div class="gallery-item-content">
+                    <h3>Flight Ticket Services</h3>
+                    <p>Comprehensive flight booking services with flexible options to accommodate medical appointments and recovery time.</p>
+                    <div class="gallery-item-meta">
+                        <span><i class="fas fa-plane"></i>All Airlines</span>
+                        <span><i class="fas fa-clock"></i>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="medical">
+                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Medical Consultation">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h4>Expert Consultations</h4>
+                        <p>Professional medical consultations and treatment planning</p>
+                    </div>
+                </div>
+                <div class="gallery-item-content">
+                    <h3>Medical Consultations</h3>
+                    <p>Pre-travel consultations and treatment planning with renowned medical specialists in Turkey and Syria.</p>
+                    <div class="gallery-item-meta">
+                        <span><i class="fas fa-stethoscope"></i>Expert Doctors</span>
+                        <span><i class="fas fa-language"></i>Multilingual</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="therapeutic">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spa Treatment">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h4>Wellness & Recovery</h4>
+                        <p>Therapeutic spa treatments and wellness programs</p>
+                    </div>
+                </div>
+                <div class="gallery-item-content">
+                    <h3>Spa & Wellness Centers</h3>
+                    <p>Relaxation and recovery programs at premium spa facilities, perfect for post-treatment rehabilitation.</p>
+                    <div class="gallery-item-meta">
+                        <span><i class="fas fa-spa"></i>Therapeutic Spas</span>
+                        <span><i class="fas fa-leaf"></i>Natural Therapy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="section">
+            <h2>Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="stat-number">800+</div>
+                    <div class="stat-label">Patients Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Partner Hospitals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-gallery">
+        <div class="section">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Anahtar Tourism made my medical journey to Turkey seamless and stress-free. Their attention to detail and care was exceptional."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <h5>Mohammed K.</h5>
+                            <p>Heart Surgery Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The therapeutic travel program was exactly what I needed. Professional service combined with cultural enrichment."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SA</div>
+                        <div class="author-info">
+                            <h5>Sarah A.</h5>
+                            <p>Wellness Retreat Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "From flight booking to hotel arrangements, everything was perfectly coordinated. Highly recommend their services."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AH</div>
+                        <div class="author-info">
+                            <h5>Ahmed H.</h5>
+                            <p>Orthopedic Treatment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Contact us today to learn more about our medical tourism services and begin your path to better health.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>Turkey: +90 505 457 857 615<br>Syria: +963 993 737 532<br>Damascus: +963 11 596 660</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>ahmadalsuhli93@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Location</h4>
+                <p>Damascus sub - Al-Tall - Al-Wadi - Alaa Building - Ground Floor</p>
+              </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Anahtar Tourism | Email: ahmadalsuhli93@gmail.com | Damascus, Syria</p>
+    </footer>
+
+    <script>
+        // Gallery filtering functionality
+        const filterButtons = document.querySelectorAll('.category-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-category');
+
+                galleryItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Initialize gallery items
+        galleryItems.forEach(item => {
+            item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        });
+    </script>
+</body>
+</html>

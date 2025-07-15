@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Anahtar Tourism</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <!-- Logo Symbol -->
+      <g transform="translate(10, 8)">
+        <!-- Maroon/Red parts -->
+        <path d="M0 8 L0 32 L8 32 L8 16 L24 16 L24 8 Z" fill="#8B2635"/>
+        <path d="M32 8 L40 8 L40 16 L32 16 Z" fill="#8B2635"/>
+        <path d="M16 24 L32 24 L32 32 L24 32 L24 40 L16 40 Z" fill="#8B2635"/>
+        
+        <!-- Teal/Blue parts -->
+        <path d="M24 0 L32 0 L32 24 L24 24 Z" fill="#2B8A9C"/>
+        <path d="M16 16 L24 16 L24 44 L16 44 Z" fill="#2B8A9C"/>
+        <path d="M8 32 L16 32 L16 40 L8 40 Z" fill="#2B8A9C"/>
+      </g>
+        
+      <!-- Company Name -->
+      <text x="60" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2B8A9C">Anahtar</text>
+      <text x="60" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2B8A9C">Tourism</text>
+    </svg>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="ar/contact.html" class="lang-switch">العربية</a>
+    </nav>
+  </header>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>We're here to help you with all your healthcare and tourism needs. Reach out to us today!</p>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="section">
+    <div class="contact-info-grid">
+      <div class="contact-info-card">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email Us</h3>
+        <p>Send us your inquiries and we'll respond within 24 hours</p>
+        <div class="contact-details">
+          <a href="mailto:ahmadalsuhli93@gmail.com">ahmadalsuhli93@gmail.com</a>
+          <a href="mailto:info@anahtar.com">info@anahtar.com</a>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <h3>Call Us</h3>
+        <p>Speak directly with our team for immediate assistance</p>
+        <div class="contact-details">
+          <a href="tel:+905457857615">
+            <i class="fas fa-flag"></i>
+            Turkey: +90 545 785 7615
+          </a>
+          <a href="tel:+963937375532">
+            <i class="fas fa-flag"></i>
+            Syria: +963 937 375 532
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3>Visit Us</h3>
+        <p>Meet us at our offices for personalized consultation</p>
+        <div class="contact-details">
+          <div class="address">
+            <strong>Turkey Office:</strong>
+            <span>Istanbul, Turkey</span>
+          </div>
+          <div class="address">
+            <strong>Syria Office:</strong>
+            <span>Damascus, Syria</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Working Hours</h3>
+        <p>We're available to serve you during these hours</p>
+        <div class="contact-details">
+          <div class="hours">
+            <strong>Monday - Friday:</strong>
+            <span>9:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours">
+            <strong>Saturday:</strong>
+            <span>10:00 AM - 4:00 PM</span>
+          </div>
+          <div class="hours">
+            <strong>Sunday:</strong>
+            <span>Closed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="section">
+      <h2>Send Us a Message</h2>
+      <p>Fill out the form below and we'll get back to you as soon as possible</p>
+      
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option value="medical-tourism">Medical Tourism</option>
+            <option value="educational-tourism">Educational Tourism</option>
+            <option value="business-tourism">Business Tourism</option>
+            <option value="cultural-tourism">Cultural Tourism</option>
+            <option value="consultation">General Consultation</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Tell us about your needs, questions, or how we can help you..."></textarea>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I agree to the processing of my personal data for the purpose of responding to my inquiry *</label>
+        </div>
+
+        <button type="submit" class="btn form-submit-btn">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quick Contact Section -->
+  <section class="quick-contact-section">
+    <div class="section">
+      <h2>Quick Contact Options</h2>
+      <div class="quick-contact-grid">
+        <a href="https://wa.me/905457857615" class="quick-contact-btn whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+          <small>Instant messaging</small>
+        </a>
+        <a href="tel:+905457857615" class="quick-contact-btn phone">
+          <i class="fas fa-phone"></i>
+          <span>Call Now</span>
+          <small>Direct phone call</small>
+        </a>
+        <a href="mailto:ahmadalsuhli93@gmail.com" class="quick-contact-btn email">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+          <small>Send an email</small>
+        </a>
+        <a href="#" class="quick-contact-btn appointment">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Book Appointment</span>
+          <small>Schedule a meeting</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>How quickly do you respond to inquiries?</h4>
+          <p>We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer free consultations?</h4>
+          <p>Yes, we offer free initial consultations to understand your needs and provide appropriate recommendations.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What languages do you support?</h4>
+          <p>We provide services in Arabic, English, and Turkish to serve our diverse clientele effectively.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can you help with visa applications?</h4>
+          <p>Yes, we provide comprehensive visa assistance and documentation support for your travel needs.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Are your services available 24/7?</h4>
+          <p>While our office hours are listed above, we provide emergency contact options for urgent medical tourism needs.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer payment plans?</h4>
+          <p>Yes, we offer flexible payment options and plans to make our services accessible to all clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="contact-cta">
+    <h3>Ready to Start Your Journey?</h3>
+    <p>Contact us today and let us help you achieve your healthcare and tourism goals</p>
+    <div class="contact-buttons">
+      <a href="tel:+905457857615" class="contact-btn">
+        <i class="fas fa-phone"></i>
+        Call Now
+      </a>
+      <a href="mailto:ahmadalsuhli93@gmail.com" class="contact-btn">
+        <i class="fas fa-envelope"></i>
+        Email Us
+      </a>
+      <a href="https://wa.me/905457857615" class="contact-btn">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Anahtar Tourism | info@anahtar.com | Syria</p>
+  </footer>
+
+
+  <script>
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Simple validation
+      if (!data.firstName || !data.lastName || !data.email || !data.subject || !data.message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      if (!data.consent) {
+        alert('Please agree to the data processing consent.');
+        return;
+      }
+      
+      // Simulate form submission
+      const submitBtn = document.querySelector('.form-submit-btn');
+      const originalText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      submitBtn.disabled = true;
+      
+      // Simulate API call
+      setTimeout(() => {
+        alert('Thank you for your message! We will get back to you within 24 hours.');
+        this.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
