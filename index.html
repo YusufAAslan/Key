@@ -43,14 +43,47 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Anahtar Tourism</h1>
-    <p>Your gateway to premium medical and therapeutic tourism in Syria. Experience world-class healthcare combined with unforgettable cultural journeys.</p>
-    <div class="hero-buttons">
-      <a href="#services" class="btn">Explore Our Services</a>
-      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+  <section class="hero-slider">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80');">
+      <div class="overlay">
+        <div class="slide-content">
+          <h1>Healing in Nature</h1>
+          <p>Relax in warm thermal waters surrounded by calming forests and fresh air.</p>
+          <a href="#services" class="btn">View Medical Services</a>
+        </div>
+      </div>
     </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?auto=format&fit=crop&w=1920&h=1080');">
+      <div class="overlay">
+        <div class="slide-content">
+          <h1>Wellness & Nature Retreats</h1>
+          <p>Rejuvenate in nature with expert care and personalized wellness programs.</p>
+          <a href="#contact" class="btn btn-secondary">Start Your Journey</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&h=1080');">
+      <div class="overlay">
+        <div class="slide-content">
+          <h1>Discover Syria’s Beauty</h1>
+          <p>Explore the cultural richness and natural harmony of Syria’s therapeutic destinations.</p>
+          <a href="#services" class="btn">Explore Packages</a>
+        </div>
+      </div>
+    </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&h=1080');">
+            <div class="overlay">
+          <div class="slide-content">
+          <h1>Natural Thermal Springs</h1>
+          <p>Rejuvenate your body and mind in Syria's natural hot springs with proven therapeutic benefits</p>
+          <a href="#services" class="btn">Thermal Therapy</a>
+          <a href="#contact" class="btn btn-secondary">Experience Now</a>
+        </div>
+      </div>
   </section>
+
 
   <section class="section" id="services">
     <h2>Our Premium Services</h2>
@@ -179,5 +212,17 @@
     <p>© 2025 Anahtar Tourism | Your trusted partner for medical and leisure tourism in Syria</p>
     <p>Email: info@anahtar.com | Damascus sub, Syria</p>
   </footer>
+
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-slider .slide');
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }, 6000);
+</script>
+
 </body>
 </html>
